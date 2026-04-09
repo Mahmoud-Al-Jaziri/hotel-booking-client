@@ -1,0 +1,13 @@
+import "bootstrap/dist/css/bootstrap.min.css";
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import App from './App.jsx'
+import BookingProvider from "./contexts/BookingContext.jsx";
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <BookingProvider>
+      <App />
+    </BookingProvider>
+  </StrictMode>,
+)
