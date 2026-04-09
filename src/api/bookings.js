@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:3000"
+const API_URL = "https://hotel-booking-api-psi.vercel.app"
 
 export const getBookings = ()=>{
     return axios.get(`${API_URL}/bookings`)
